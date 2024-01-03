@@ -1,0 +1,38 @@
+.btn__scroll {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #f28705;
+}
+.btn__scroll a {
+  color: #fff;
+}
+
+.btn__scroll a:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .btn__scroll {
+    right: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .btn__scroll {
+    bottom: 60px;
+    right: 80px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .btn__scroll {
+    bottom: 80px;
+    right: 220px;
+  }
+}

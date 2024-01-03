@@ -1,0 +1,141 @@
+.aboutus {
+  min-height: 40vh;
+}
+
+.container__aboutus {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.logo__aboutus {
+  width: 300px;
+  height: 200px;
+  margin: 50px auto 20px auto;
+  display: block;
+}
+
+.title__aboutus {
+  display: none;
+}
+
+.description__aboutus {
+  font-weight: 400;
+  margin-bottom: 40px;
+  transform: translateY(50px);
+  line-height: 32px;
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.description__aboutus--display {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.advantages__box {
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  color: #414042;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  transition-delay: 0.3s;
+}
+.icon--display {
+  opacity: 1;
+}
+
+.advantages__title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #be1e2d;
+}
+
+.advantages__text {
+  line-height: 32px;
+  font-weight: 400;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.9s ease-in-out;
+  transition-delay: 0.5s;
+}
+.advantages__text--display {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .logo__aboutus {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .description__aboutus {
+    font-size: 18px;
+  }
+
+  .advantages__title {
+    font-size: 25px;
+  }
+
+  .advantages__text {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .container.about-us {
+    margin: 70px auto;
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .logo__aboutus {
+    width: 350px;
+    height: 250px;
+    margin: 0;
+    width: 40%;
+  }
+  .container__aboutus {
+    text-align: left;
+    width: 60%;
+  }
+  .title__aboutus {
+    display: block;
+    font-size: 28px;
+    color: #414042;
+    text-transform: uppercase;
+  }
+  .description__aboutus {
+    margin-bottom: 0;
+  }
+  .advantages {
+    display: flex;
+    gap: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .about-us {
+    gap: 50px;
+  }
+  .logo__aboutus {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (min-width: 1536px) {
+  .about-us {
+    gap: 70px;
+  }
+}

@@ -1,0 +1,82 @@
+.submenu__container {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #be1e2d;
+  width: 100vw;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease, height 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+.active {
+  opacity: 1;
+  height: 50vh;
+  pointer-events: all;
+  padding-bottom: 20px;
+}
+
+ul {
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+li {
+  width: 50%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 1px solid #ffffff5b;
+}
+li a {
+  color: #ffff;
+  transition: color 0.4s ease;
+}
+
+li a:hover {
+  color: #e7c3a2;
+}
+.submenu_language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.submenu_language span {
+  color: #ff8894;
+}
+.btn__lang {
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.btn__lang:hover {
+  color: #f28705;
+}
+
+.activebtn {
+  color: #f28705;
+}
+
+@media (min-width: 640px) {
+  .submenu__container {
+    top: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .submenu__container {
+    display: none;
+  }
+}

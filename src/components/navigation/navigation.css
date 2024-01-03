@@ -1,0 +1,150 @@
+.nav__container {
+  padding: 5px 10px;
+  position: relative;
+  background-color: #282829;
+  height: 60px;
+  display: flex;
+  align-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.nav__menu--mobile {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav_menu--desktop {
+  display: none;
+}
+
+.nav__btn {
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background: #ffffff00;
+}
+.bars,
+.closebars {
+  opacity: 1;
+  color: #be1e2d;
+}
+
+.change-lenguage {
+  display: none;
+}
+
+@media (min-width: 475px) {
+  .logo {
+    width: 140px;
+  }
+}
+
+@media (min-width: 640px) {
+  .nav__container {
+    height: 80px;
+  }
+  .logo {
+    width: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__container {
+    height: 90px;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .nav__menu--mobile {
+    display: none;
+  }
+  .nav__btn {
+    pointer-events: none;
+  }
+
+  .nav_menu--desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav_menu--desktop ul {
+    display: flex;
+    gap: 20px;
+  }
+  .nav_menu--desktop ul li {
+    border: none;
+  }
+  .nav_menu--desktop ul li a:hover {
+    color: #be1e2d;
+  }
+  .change-lenguage {
+    display: block;
+    width: 80px;
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-language {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid #ffffff38;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .activebtn {
+    color: #f28705;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .nav_menu--desktop {
+    gap: 50px;
+  }
+
+  .nav_menu--desktop ul {
+    display: flex;
+    gap: 40px;
+    width: 500px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .nav_menu--desktop ul {
+    gap: 60px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nav_menu--desktop ul {
+    gap: 80px;
+  }
+}

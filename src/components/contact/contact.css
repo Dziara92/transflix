@@ -1,0 +1,171 @@
+.contact {
+  background-color: #414042;
+  min-height: 10vh;
+  position: relative;
+}
+
+.contact .container {
+  padding: 10px 10px;
+}
+
+.contact__title {
+  text-align: center;
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.box__left {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffff;
+}
+.box__left-icon {
+  width: 60px;
+  height: 60px;
+  color: #be1e2d;
+}
+
+.box__left-icon.phone,
+.box__left-icon.email {
+  margin-top: 50px;
+}
+.box__left h3 {
+  font-size: 20px;
+}
+
+.box__left p {
+  letter-spacing: 0.8px;
+}
+
+.box__right {
+  margin-bottom: 40px;
+}
+
+.form__contact {
+  display: flex;
+  flex-direction: column;
+}
+.form__title {
+  color: #ffff;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.form__contact label {
+  color: #ffff;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.form__contact input {
+  height: 30px;
+  border: none;
+  outline: none;
+  font-family: "Inter";
+  padding: 5px 10px;
+  letter-spacing: 0.6px;
+}
+.form__contact input:focus,
+.form__contact textarea:focus {
+  border: 1px solid #fff;
+}
+
+.form__contact textarea {
+  border: none;
+  outline: none;
+  font-family: "Inter";
+  padding: 10px 10px;
+  letter-spacing: 0.6px;
+}
+
+.error__message {
+  color: #eb1d32;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.form__btn {
+  align-self: center;
+  width: 100px;
+  margin-top: 30px;
+  padding: 10px 10px;
+  background-color: #be1e2d;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form__btn:hover {
+  background-color: #eb1d32;
+}
+
+.form__message__success {
+  background-color: #ffffff;
+  padding: 5px 5px;
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.form__success {
+  color: #f28705;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+@media (min-width: 640px) {
+  .box__right {
+    width: 80%;
+    margin: 0 auto 40px auto;
+  }
+  .form__message__success {
+    width: 80%;
+    margin: 30px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__us {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+  }
+  .contact__title {
+    font-size: 28px;
+    margin: 80px 0;
+  }
+
+  .box__left {
+    margin: 0 0 90px 0;
+    width: 50%;
+  }
+
+  .box__left h3 {
+    font-size: 25px;
+  }
+
+  .box__right {
+    width: 50%;
+    margin: 0 0 90px 0;
+  }
+
+  .form__title {
+    margin-top: 0;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 1280px) {
+  .form__message__success {
+    width: 70%;
+  }
+}
+/* @media (min-width: 1536px) {
+} */
